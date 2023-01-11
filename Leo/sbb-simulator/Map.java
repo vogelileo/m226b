@@ -18,13 +18,9 @@ public class Map extends MasterWorld
         this.worldController = worldController;   
         addObject(new Resetbutton(),50,420);
         addObject(new Undobutton(),130,420);
-        addObject(new City("Zürich"),400,100);
-        addObject(new City("Luzern"),250,200);
-        addObject(new City("Bern"),200,150);
-        addObject(new City("Chur"),500,300);
-        removeObjects(getObjects(Route.class));
-        this.worldController.routes.forEach((Route route) -> {
-            addObject(route, 0,0);
+        
+        this.worldController.cities.forEach((City city) -> {
+            addObject(city, city.xPos,city.yPos);
         });
     }
     
@@ -33,8 +29,10 @@ public class Map extends MasterWorld
         GreenfootImage text = new GreenfootImage(textString, 24, Color.WHITE, new Color(0, 0, 0, 0));
         getBackground().drawImage(text, 660,405);
         
-        
-        
+        removeObjects(getObjects(Route.class));
+        this.worldController.routes.forEach((Route route) -> {
+            addObject(route, 0,0);
+        });
         
         
     }

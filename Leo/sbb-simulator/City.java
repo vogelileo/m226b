@@ -9,9 +9,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class City extends Actor
 {
     private String name;
+    public int xPos;
+    public int yPos;
     
-    public City(String name){
-        name = name;
+    public City(String name,int xPos, int yPos ){
+        this.name = name;
+        this.xPos  = xPos;
+        this.yPos = yPos;
     }
     /**
      * Act - do whatever the City wants to do. This method is called whenever

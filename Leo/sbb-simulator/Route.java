@@ -11,9 +11,10 @@ public class Route extends Actor
     public City startCity;
     public City endCity;
     
-    public void Route(City startCity, City endCity){
-        startCity = startCity;
-        endCity = endCity;
+    public Route(City startCity, City endCity){
+        this.startCity = startCity;
+        this.endCity = endCity;
+        
     }
     
     /**
@@ -23,10 +24,14 @@ public class Route extends Actor
     public void act()
     {
         // Add your action code here.
-        
+        getWorld().getBackground().drawLine(startCity.getX(),startCity.getY(),endCity.getX(),endCity.getY());
     }
     
     public int getRouteDistance(){
-        return 0;
+        int heightDistance = Math.abs(startCity.getY() - endCity.getY());
+        int widthDistance = Math.abs(startCity.getX() - endCity.getX());
+
+        return (int)Math.sqrt(Math.pow(heightDistance,2) + Math.pow(widthDistance,2));
+        
     }
 }
