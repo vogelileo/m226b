@@ -35,7 +35,7 @@ public class Route extends Actor
     {
         setLocation(startCity.getX() - widthDistance() /2, startCity.getY() - heightDistance() / 2);
             
-        GreenfootImage image = new GreenfootImage("board.jpg");
+        GreenfootImage image = new GreenfootImage("rails.png");
         image.scale(getRouteDistance(),10);
         
         setImage(image);
