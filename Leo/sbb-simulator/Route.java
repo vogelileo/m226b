@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.Vector;
 /**
  * Write a description of class Route here.
  * 
@@ -15,6 +15,16 @@ public class Route extends Actor
         this.startCity = startCity;
         this.endCity = endCity;
         
+        
+        
+    }
+    
+    private int heightDistance(){
+        return startCity.getY() - endCity.getY(); 
+    }
+    
+    private int widthDistance(){
+        return startCity.getX() - endCity.getX();
     }
     
     /**
@@ -23,13 +33,31 @@ public class Route extends Actor
      */
     public void act()
     {
-        // Add your action code here.
-        getWorld().getBackground().drawLine(startCity.getX(),startCity.getY(),endCity.getX(),endCity.getY());
+        setLocation(startCity.getX() - widthDistance() /2, startCity.getY() - heightDistance() / 2);
+            
+        GreenfootImage image = new GreenfootImage("board.jpg");
+        image.scale(getRouteDistance(),10);
+        
+        setImage(image);
+        
+        double aval = (double)Math.abs(heightDistance()) / getRouteDistance();
+        double rotation = 0.0;
+        
+        if(startCity.getX() >= endCity.getX()){
+            rotation= Math.toDegrees(Math.asin(aval));
+        }else{
+            rotation= Math.toDegrees(Math.acos(aval));
+            rotation += 90;
+        }
+        
+        
+        setRotation((int)rotation);
+        
     }
     
     public int getRouteDistance(){
-        int heightDistance = Math.abs(startCity.getY() - endCity.getY());
-        int widthDistance = Math.abs(startCity.getX() - endCity.getX());
+        int heightDistance = Math.abs(heightDistance());
+        int widthDistance = Math.abs(widthDistance());
 
         return (int)Math.sqrt(Math.pow(heightDistance,2) + Math.pow(widthDistance,2));
         

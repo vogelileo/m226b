@@ -24,6 +24,7 @@ public class WorldController
         cities.add(new City("Luzern",200,200));
         cities.add(new City("Zürich",400,100));
         
+        routes.add(new Route(cities.get(0), cities.get(2)));
         this.currentHighscore = highScore;
     }
     
@@ -59,6 +60,7 @@ public class WorldController
     
     public void resetRoutes(){
         routes = new ArrayList<Route>();
+        
         
     }
     
