@@ -16,9 +16,11 @@ public class WinScreen extends MasterWorld
     public WinScreen(WorldController worldController)
     {
         this.worldController = worldController;
+        GreenfootImage curScore = new GreenfootImage("YOUR SCORE: " + worldController.getTotalRouteDistance(), 24, Color.RED, new Color(0, 0, 0, 0));
+        getBackground().drawImage(curScore, 320,215);
         
-        GreenfootImage text = new GreenfootImage("START", 24, Color.BLACK, new Color(0, 0, 0, 0));
-        getBackground().drawImage(text, 300,400);
+        GreenfootImage curHighScore = new GreenfootImage("HIGHSCORE: " + worldController.currentHighscore, 24, Color.RED, new Color(0, 0, 0, 0));
+        getBackground().drawImage(curHighScore, 320,400);
         
         
     }

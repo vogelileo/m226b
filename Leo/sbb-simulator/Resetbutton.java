@@ -18,7 +18,9 @@ public class Resetbutton extends Button
     public void act()
     {
         GreenfootImage text = new GreenfootImage("      "+ name +"      ", 24, Color.WHITE ,new Color(0,0,0,0));
-        setImage(text);
+        
+setImage(text);
+        
         
         if(Greenfoot.mouseClicked(this)){
             MasterWorld world = (MasterWorld)getWorld();

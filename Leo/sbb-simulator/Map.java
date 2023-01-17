@@ -25,6 +25,8 @@ public class Map extends MasterWorld
     }
     
     public void act(){
+        GreenfootImage defaultBackground = new GreenfootImage("MapScreen.png");
+        setBackground(defaultBackground);
         String textString = "Score: " +Integer.toString(worldController.getTotalRouteDistance())+ "km";
         GreenfootImage text = new GreenfootImage(textString, 24, Color.WHITE, new Color(0, 0, 0, 0));
         getBackground().drawImage(text, 660,405);

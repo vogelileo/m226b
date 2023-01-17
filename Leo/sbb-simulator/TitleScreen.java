@@ -13,10 +13,9 @@ public class TitleScreen extends MasterWorld
      */
     public TitleScreen()
     {
-        
-        this.worldController = new WorldController();
-        
-        worldController.currentHighscore = 1;
+        FileReader fileReader = new FileReader();
+        int score = fileReader.readHighscore();
+        this.worldController = new WorldController(score);
         
         addObject(new Startbutton(),400,410);
         

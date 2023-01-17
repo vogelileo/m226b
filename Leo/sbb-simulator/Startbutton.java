@@ -21,7 +21,7 @@ public class Startbutton extends Button
             MasterWorld world = (MasterWorld)getWorld();
             Map map = new Map(world.worldController);
             Greenfoot.setWorld(map);
-            //Greenfoot.setWorld(new Map(getWorld().));
+            
         }
     }
 }
