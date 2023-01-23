@@ -19,12 +19,13 @@ public class WorldController
      */
     public WorldController(int highScore)
     {
-        cities.add(new City("Chur",500,300));
-        cities.add(new City("Bern",200,100));
-        cities.add(new City("Luzern",200,200));
-        cities.add(new City("Zürich",400,100));
+        cities.add(new City("Chur",530,180));
+        cities.add(new City("Bern",320,150));
+        cities.add(new City("Genf",160,280));
+        cities.add(new City("Zürich",420,100));
+        cities.add(new City("Lugano",480,340));
+        cities.add(new City("Zermatt",350,320));
         
-        routes.add(new Route(cities.get(0), cities.get(2)));
         this.currentHighscore = highScore;
     }
     

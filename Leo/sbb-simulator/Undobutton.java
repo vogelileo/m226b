@@ -26,7 +26,7 @@ public class Undobutton extends Button
             MasterWorld world = (MasterWorld)getWorld();
             WorldController controller = world.worldController;
             controller.undoRoute();
-            sleepTime = 50;
+            sleepTime = 25;
             //Greenfoot.setWorld(new Map(getWorld().));
         }
     }

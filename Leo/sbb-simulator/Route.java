@@ -33,26 +33,28 @@ public class Route extends Actor
      */
     public void act()
     {
-        setLocation(startCity.getX() - widthDistance() /2, startCity.getY() - heightDistance() / 2);
+        int sX = startCity.getX();
+        int sY = startCity.getY();
+        int eX = endCity.getX();
+        int eY = endCity.getY();
+        
+        setLocation(sX - widthDistance() /2, sY - heightDistance() / 2);
             
         GreenfootImage image = new GreenfootImage("rails.png");
         image.scale(getRouteDistance(),10);
-        
         setImage(image);
         
         double aval = (double)Math.abs(heightDistance()) / getRouteDistance();
-        double rotation = 0.0;
-        
-        if(startCity.getX() >= endCity.getX()){
-            rotation= Math.toDegrees(Math.asin(aval));
-        }else{
-            rotation= Math.toDegrees(Math.acos(aval));
-            rotation += 90;
+        double rotation = rotation= Math.toDegrees(Math.asin(aval));
+
+        if(sX >= eX && sY >= eY){
+             rotation = 180-rotation;
+        }else if(sX < eX && sY < eY){
+            rotation = 180-rotation;
         }
+        rotation = -1 * rotation;
         
-        
-        setRotation((int)rotation);
-        
+        setRotation((int)rotation);    
     }
     
     public int getRouteDistance(){
