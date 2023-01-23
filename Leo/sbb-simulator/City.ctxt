@@ -1,10 +1,11 @@
 #BlueJ class context
 comment0.target=City
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ City\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Class\ City\r\n\ \r\n\ @author\ Leo\ Vogel\r\n\ @version\ 24012023\r\n
 comment1.params=name\ xPos\ yPos
 comment1.target=City(java.lang.String,\ int,\ int)
 comment2.params=select
 comment2.target=void\ setSelected(boolean)
+comment2.text=\r\n\ \r\n\ @param\ select\r\n
 comment3.params=
 comment3.target=void\ act()
 comment3.text=\r\n\ Act\ -\ do\ whatever\ the\ City\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n

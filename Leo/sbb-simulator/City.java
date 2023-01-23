@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*; // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Class City
@@ -6,47 +6,45 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author Leo Vogel
  * @version 24012023
  */
-public class City extends Actor
-{
+public class City extends Actor {
     private String name;
     private boolean selected = false;
     public int xPos;
     public int yPos;
-    
-    public City(String name,int xPos, int yPos ){
+
+    public City(String name, int xPos, int yPos) {
         this.name = name;
-        this.xPos  = xPos;
+        this.xPos = xPos;
         this.yPos = yPos;
     }
-
-    
-    public void setSelected(boolean select){
+    /**
+     * Set the selected value to new status
+     * @param select
+     */
+    public void setSelected(boolean select) {
         this.selected = select;
     }
-    
-    
+
     /**
      * Act - do whatever the City wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    
-    public void act()
-    {
-        if(selected){
+
+    public void act() {
+        if (selected) { // display if field is active for generating a route
             GreenfootImage backgroundBlue = new GreenfootImage("blue-draught.png");
             setImage(backgroundBlue);
-            
-        }else{
+
+        } else {
             GreenfootImage backgroundRed = new GreenfootImage("red-draught.png");
             setImage(backgroundRed);
         }
-        
 
-        if(Greenfoot.mouseClicked(this)){
-            MasterWorld world = (MasterWorld)getWorld();
+        if (Greenfoot.mouseClicked(this)) {
+            MasterWorld world = (MasterWorld) getWorld();
             WorldController controller = world.worldController;
             controller.selectCity(this);
         }
-            
+
     }
 }

@@ -7,20 +7,17 @@ import greenfoot.*;
  * @author Leo Vogel
  * @version 24012023
  */
-public class TitleScreen extends MasterWorld
-{
-    /* (World, Actor, GreenfootImage, Greenfoot and MouseInfo)*/
+public class TitleScreen extends MasterWorld {
     /**
      * Constructor for objects of class TitleScreen.
      */
-    public TitleScreen()
-    {
+    public TitleScreen() {
         FileReader fileReader = new FileReader();
         int score = fileReader.readHighscore();
         this.worldController = new WorldController(score);
-        
-        addObject(new Startbutton(),400,410);
-        
+
+        addObject(new Startbutton(), 400, 410);
+
         Greenfoot.start();
     }
 }
