@@ -2,16 +2,20 @@ import lang.stride.*;
 import greenfoot.*;
 
 /**
- * Write a description of class Map here.
- * @author (your name) @version (a version number or a date)
+ * Class Map
+ * 
+ * @author Leo Vogel
+ * @version 24012023
  */
 public class Map extends MasterWorld
 {
-
-    /* (World, Actor, GreenfootImage, Greenfoot and MouseInfo)*/
-
     /**
      * Constructor for objects of class Map.
+     *
+     */
+    /**
+     * ad
+     
      */
     public Map(WorldController worldController)
     {

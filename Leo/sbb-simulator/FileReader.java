@@ -6,10 +6,10 @@ import java.util.*;
 
 
 /**
- * Write a description of class FileReader here.
+ * Class FileReader
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Leo Vogel
+ * @version 24012023
  */
 public class FileReader  
 {

@@ -2,8 +2,10 @@ import lang.stride.*;
 import greenfoot.*;
 
 /**
- * Write a description of class TitleScreen here.
- * @author (your name) @version (a version number or a date)
+ * Class TitleScreen
+ * 
+ * @author Leo Vogel
+ * @version 24012023
  */
 public class TitleScreen extends MasterWorld
 {

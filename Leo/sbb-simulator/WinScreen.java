@@ -2,8 +2,10 @@ import lang.stride.*;
 import greenfoot.*;
 
 /**
- * Write a description of class WinScreen here.
- * @author (your name) @version (a version number or a date)
+ * Class WinScreen
+ * 
+ * @author Leo Vogel
+ * @version 24012023
  */
 public class WinScreen extends MasterWorld
 {

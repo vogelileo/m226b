@@ -1,10 +1,10 @@
 import java.util.*;
 import greenfoot.*;
 /**
- * Write a description of class WorldController here.
+ * Class WorldController
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Leo Vogel
+ * @version 24012023
  */
 public class WorldController  
 {

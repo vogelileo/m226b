@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Resetbutton here.
+ * Class Resetbutton
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Leo Vogel
+ * @version 24012023
  */
 public class Resetbutton extends Button
 {

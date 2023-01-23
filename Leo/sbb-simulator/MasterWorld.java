@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class MasterWorld here.
+ * Class MasterWorld
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Leo Vogel
+ * @version 24012023
  */
 public class MasterWorld extends World
 {
@@ -15,9 +15,7 @@ public class MasterWorld extends World
      */
     public MasterWorld()
     {    
-        super(800, 450, 1); 
-        
-        
+        super(800, 450, 1); //Define worldsize  
     }
     
     
