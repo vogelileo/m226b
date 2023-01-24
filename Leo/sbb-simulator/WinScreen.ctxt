@@ -4,6 +4,4 @@ comment0.text=\r\n\ Class\ WinScreen\r\n\ \r\n\ @author\ Leo\ Vogel\r\n\ @versio
 comment1.params=worldController
 comment1.target=WinScreen(WorldController)
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ WinScreen.\r\n
-comment2.params=
-comment2.target=void\ act()
-numComments=3
+numComments=2

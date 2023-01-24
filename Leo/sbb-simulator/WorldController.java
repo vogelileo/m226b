@@ -77,7 +77,7 @@ public class WorldController {
      * checks if a city was already selcted twice before
      * 
      * @param city
-     * @return boolean if city is valid
+     * @return if city is valid
      */
     private boolean validCity(City city) {
         List<City> allUsedCities = new ArrayList<City>();
