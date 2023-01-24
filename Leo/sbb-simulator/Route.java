@@ -19,7 +19,7 @@ public class Route extends Actor {
     /**
      * Returns height diffrence between startcity and endcity
      * 
-     * @return int
+     * @return height distance
      */
     private int heightDistance() {
         return startCity.getY() - endCity.getY();
@@ -28,7 +28,7 @@ public class Route extends Actor {
     /**
      * Returns horizontal distance between startcity and endcity
      * 
-     * @return int
+     * @return horizontal distance
      */
     private int widthDistance() {
         return startCity.getX() - endCity.getX();
@@ -37,7 +37,7 @@ public class Route extends Actor {
     /**
      * Returns length of the route itself. Calculated with pythagoras
      * 
-     * @return int
+     * @return distance of route
      */
     public int getRouteDistance() {
         int heightDistance = Math.abs(heightDistance());
