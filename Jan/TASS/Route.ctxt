@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Route
+comment0.text=\r\n\ Class\ for\ Route\r\n\ \r\n\ @author\ Jan\ Schweizer\r\n\ @version\ V1.0\r\n
+comment1.params=startCity\ endCity
+comment1.target=Route(City,\ City)
+comment2.params=
+comment2.target=int\ heightDistance()
+comment2.text=\r\n\ Returns\ height\ diffrence\ between\ the\ two\ cities\r\n\ \r\n\ @return\ heightDistance\r\n
+comment3.params=
+comment3.target=int\ widthDistance()
+comment3.text=\r\n\ Returns\ horizontal\ distance\ between\ the\ two\ cities\r\n\ \r\n\ @return\ widthDistance\r\n
+comment4.params=
+comment4.target=int\ getRouteDistance()
+comment4.text=\r\n\ Returns\ length\ of\ the\ route\r\n\ \r\n\ @return\ routLength\r\n
+comment5.params=
+comment5.target=void\ act()
+comment5.text=\r\n\ Act\ -\ do\ whatever\ the\ Route\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+numComments=6
